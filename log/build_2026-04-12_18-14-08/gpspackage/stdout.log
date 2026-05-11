@@ -1,0 +1,3 @@
+[ 33%] Built target pure_pursuit_node
+[ 66%] Built target teensy_comm_node
+[ 83%] [32mBuilding CXX object CMakeFiles/waypoint_logger_node.dir/src/waypoint_logger.cpp.cpp.o[0m

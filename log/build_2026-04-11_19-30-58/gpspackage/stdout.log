@@ -1,0 +1,47 @@
+[35m[1mConsolidate compiler generated dependencies of target pure_pursuit_node[0m
+[ 50%] Built target teensy_comm_node
+[ 75%] [32mBuilding CXX object CMakeFiles/pure_pursuit_node.dir/src/pure_pursuit.cpp.o[0m
+[100%] [32m[1mLinking CXX executable pure_pursuit_node[0m
+[100%] Built target pure_pursuit_node
+-- Install configuration: ""
+-- Installing: /home/muhaliugur/gpsurus/install/gpspackage/lib/gpspackage/pure_pursuit_node
+-- Set runtime path of "/home/muhaliugur/gpsurus/install/gpspackage/lib/gpspackage/pure_pursuit_node" to ""
+-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/lib/gpspackage/teensy_comm_node
+-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/launch
+-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/launch/localization.launch.py
+-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config
+-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/noktalarim.dbf
+-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/deneme.shx
+-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/noktalarim.prj
+-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/rota.qmd
+-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/deneme.prj
+-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/rota2.shx
+-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/rota2.shp
+-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/rota2.prj
+-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/ekf.yaml
+-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/deneme.shp
+-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/rota2.cpg
+-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/deneme.cpg
+-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/deneme.dbf
+-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/noktalarim.shx
+-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/rota2.dbf
+-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/noktalarim.cpg
+-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/rota.csvt
+-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/rota.prj
+-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/noktalarim.shp
+-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/rota.csv
+-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/ament_index/resource_index/package_run_dependencies/gpspackage
+-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/ament_index/resource_index/parent_prefix_path/gpspackage
+-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/environment/ament_prefix_path.sh
+-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/environment/path.sh
+-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/environment/path.dsv
+-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/local_setup.bash
+-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/local_setup.sh
+-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/local_setup.zsh
+-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/local_setup.dsv
+-- Installing: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/package.dsv
+-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/ament_index/resource_index/packages/gpspackage
+-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/cmake/gpspackageConfig.cmake
+-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/cmake/gpspackageConfig-version.cmake
+-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/package.xml

@@ -1,0 +1,54 @@
+[0.008s] Invoking command in '/home/muhaliugur/gpsurus/build/gpspackage': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/muhaliugur/gpsurus/build/gpspackage -- -j32 -l32
+[0.053s] [35m[1mConsolidate compiler generated dependencies of target pure_pursuit_node[0m
+[0.061s] [ 33%] Built target waypoint_logger_node
+[0.061s] [ 66%] Built target teensy_comm_node
+[0.065s] [ 83%] [32mBuilding CXX object CMakeFiles/pure_pursuit_node.dir/src/pure_pursuit.cpp.o[0m
+[5.621s] [100%] [32m[1mLinking CXX executable pure_pursuit_node[0m
+[5.936s] [100%] Built target pure_pursuit_node
+[5.946s] Invoked command in '/home/muhaliugur/gpsurus/build/gpspackage' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/muhaliugur/gpsurus/build/gpspackage -- -j32 -l32
+[5.953s] Invoking command in '/home/muhaliugur/gpsurus/build/gpspackage': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/muhaliugur/gpsurus/build/gpspackage
+[5.960s] -- Install configuration: ""
+[5.960s] -- Installing: /home/muhaliugur/gpsurus/install/gpspackage/lib/gpspackage/pure_pursuit_node
+[5.962s] -- Set runtime path of "/home/muhaliugur/gpsurus/install/gpspackage/lib/gpspackage/pure_pursuit_node" to ""
+[5.962s] -- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/lib/gpspackage/teensy_comm_node
+[5.962s] -- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/lib/gpspackage/waypoint_logger_node
+[5.962s] -- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/launch
+[5.963s] -- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/launch/localization.launch.py
+[5.963s] -- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config
+[5.963s] -- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/noktalarim.dbf
+[5.963s] -- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/deneme.shx
+[5.963s] -- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/noktalarim.prj
+[5.963s] -- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/rota.qmd
+[5.963s] -- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/deneme.prj
+[5.963s] -- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/rota2.shx
+[5.963s] -- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/rota2.shp
+[5.963s] -- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/rota2.prj
+[5.963s] -- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/ekf.yaml
+[5.963s] -- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/deneme.shp
+[5.963s] -- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/rota2.cpg
+[5.963s] -- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/deneme.cpg
+[5.963s] -- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/deneme.dbf
+[5.963s] -- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/noktalarim.shx
+[5.963s] -- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/rota2.dbf
+[5.963s] -- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/noktalarim.cpg
+[5.963s] -- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/rota.csvt
+[5.963s] -- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/kendi_rotam.csv
+[5.964s] -- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/rota.prj
+[5.964s] -- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/noktalarim.shp
+[5.964s] -- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/rota.csv
+[5.964s] -- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/ament_index/resource_index/package_run_dependencies/gpspackage
+[5.964s] -- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/ament_index/resource_index/parent_prefix_path/gpspackage
+[5.964s] -- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/environment/ament_prefix_path.sh
+[5.964s] -- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/environment/ament_prefix_path.dsv
+[5.964s] -- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/environment/path.sh
+[5.964s] -- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/environment/path.dsv
+[5.964s] -- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/local_setup.bash
+[5.964s] -- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/local_setup.sh
+[5.964s] -- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/local_setup.zsh
+[5.964s] -- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/local_setup.dsv
+[5.964s] -- Installing: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/package.dsv
+[5.964s] -- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/ament_index/resource_index/packages/gpspackage
+[5.964s] -- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/cmake/gpspackageConfig.cmake
+[5.965s] -- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/cmake/gpspackageConfig-version.cmake
+[5.965s] -- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/package.xml
+[5.965s] Invoked command in '/home/muhaliugur/gpsurus/build/gpspackage' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/muhaliugur/gpsurus/build/gpspackage

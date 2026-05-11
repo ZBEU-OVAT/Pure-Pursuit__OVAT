@@ -1,0 +1,139 @@
+[0.000000] (-) TimerEvent: {}
+[0.000165] (gpspackage) JobQueued: {'identifier': 'gpspackage', 'dependencies': OrderedDict()}
+[0.000206] (gpspackage) JobStarted: {'identifier': 'gpspackage'}
+[0.005797] (gpspackage) JobProgress: {'identifier': 'gpspackage', 'progress': 'cmake'}
+[0.006737] (gpspackage) JobProgress: {'identifier': 'gpspackage', 'progress': 'build'}
+[0.006833] (gpspackage) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/muhaliugur/gpsurus/build/gpspackage', '--', '-j32', '-l32'], 'cwd': '/home/muhaliugur/gpsurus/build/gpspackage', 'env': OrderedDict([('USER', 'muhaliugur'), ('CCACHE_DIR', '/home/muhaliugur/.ccache'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda/lib64:/usr/local/cuda/lib64:/opt/ros/humble/opt/zmqpp_vendor/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/muhaliugur'), ('OLDPWD', '/home/muhaliugur'), ('DESKTOP_SESSION', 'pop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'pop'), ('GTK_MODULES', 'gail:atk-bridge'), ('CUDA_TOOLKIT_ROOT_DIR', '/usr/local/cuda'), ('SYSTEMD_EXEC_PID', '11086'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'muhaliugur'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'muhaliugur'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda/bin:/home/muhaliugur/.local/bin:/usr/local/cuda/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/pop-os:@/tmp/.ICE-unix/2199,unix/pop-os:/tmp/.ICE-unix/2199'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9eece5a5_0780_4152_8d08_eaf04333df2f'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'pop:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'pop'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('GNOME_TERMINAL_SERVICE', ':1.143'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '34'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('CXX', '/usr/lib/ccache/g++'), ('GDMSESSION', 'pop'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/muhaliugur/gpsurus/build/gpspackage'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-pop:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/pop:/usr/share/gnome:/home/muhaliugur/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('CC', '/usr/lib/ccache/gcc'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.063662] (gpspackage) StdoutLine: {'line': b'[ 33%] Built target waypoint_logger_node\n'}
+[0.064074] (gpspackage) StdoutLine: {'line': b'[ 66%] Built target teensy_comm_node\n'}
+[0.065541] (gpspackage) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/pure_pursuit_node.dir/src/pure_pursuit.cpp.o\x1b[0m\n'}
+[0.099585] (-) TimerEvent: {}
+[0.199863] (-) TimerEvent: {}
+[0.300162] (-) TimerEvent: {}
+[0.400494] (-) TimerEvent: {}
+[0.500803] (-) TimerEvent: {}
+[0.601103] (-) TimerEvent: {}
+[0.701439] (-) TimerEvent: {}
+[0.801770] (-) TimerEvent: {}
+[0.901995] (-) TimerEvent: {}
+[1.002323] (-) TimerEvent: {}
+[1.102661] (-) TimerEvent: {}
+[1.202980] (-) TimerEvent: {}
+[1.303238] (-) TimerEvent: {}
+[1.403571] (-) TimerEvent: {}
+[1.503841] (-) TimerEvent: {}
+[1.604193] (-) TimerEvent: {}
+[1.704533] (-) TimerEvent: {}
+[1.804846] (-) TimerEvent: {}
+[1.905181] (-) TimerEvent: {}
+[2.005483] (-) TimerEvent: {}
+[2.105803] (-) TimerEvent: {}
+[2.206124] (-) TimerEvent: {}
+[2.306435] (-) TimerEvent: {}
+[2.406792] (-) TimerEvent: {}
+[2.507142] (-) TimerEvent: {}
+[2.607460] (-) TimerEvent: {}
+[2.707816] (-) TimerEvent: {}
+[2.808129] (-) TimerEvent: {}
+[2.908441] (-) TimerEvent: {}
+[3.008762] (-) TimerEvent: {}
+[3.109073] (-) TimerEvent: {}
+[3.209392] (-) TimerEvent: {}
+[3.309737] (-) TimerEvent: {}
+[3.410072] (-) TimerEvent: {}
+[3.510378] (-) TimerEvent: {}
+[3.610741] (-) TimerEvent: {}
+[3.711059] (-) TimerEvent: {}
+[3.811375] (-) TimerEvent: {}
+[3.911716] (-) TimerEvent: {}
+[4.012035] (-) TimerEvent: {}
+[4.112356] (-) TimerEvent: {}
+[4.212651] (-) TimerEvent: {}
+[4.312984] (-) TimerEvent: {}
+[4.413312] (-) TimerEvent: {}
+[4.513613] (-) TimerEvent: {}
+[4.613920] (-) TimerEvent: {}
+[4.714210] (-) TimerEvent: {}
+[4.814507] (-) TimerEvent: {}
+[4.914787] (-) TimerEvent: {}
+[5.015070] (-) TimerEvent: {}
+[5.115343] (-) TimerEvent: {}
+[5.215627] (-) TimerEvent: {}
+[5.315918] (-) TimerEvent: {}
+[5.416197] (-) TimerEvent: {}
+[5.516476] (-) TimerEvent: {}
+[5.616677] (-) TimerEvent: {}
+[5.716983] (-) TimerEvent: {}
+[5.817296] (-) TimerEvent: {}
+[5.917613] (-) TimerEvent: {}
+[6.017970] (-) TimerEvent: {}
+[6.118293] (-) TimerEvent: {}
+[6.218598] (-) TimerEvent: {}
+[6.318829] (-) TimerEvent: {}
+[6.419040] (-) TimerEvent: {}
+[6.519274] (-) TimerEvent: {}
+[6.619579] (-) TimerEvent: {}
+[6.719869] (-) TimerEvent: {}
+[6.820094] (-) TimerEvent: {}
+[6.920339] (-) TimerEvent: {}
+[7.020590] (-) TimerEvent: {}
+[7.120888] (-) TimerEvent: {}
+[7.221245] (-) TimerEvent: {}
+[7.233280] (gpspackage) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable pure_pursuit_node\x1b[0m\n'}
+[7.321419] (-) TimerEvent: {}
+[7.421769] (-) TimerEvent: {}
+[7.522138] (-) TimerEvent: {}
+[7.622452] (-) TimerEvent: {}
+[7.628394] (gpspackage) StdoutLine: {'line': b'[100%] Built target pure_pursuit_node\n'}
+[7.637483] (gpspackage) CommandEnded: {'returncode': 0}
+[7.637953] (gpspackage) JobProgress: {'identifier': 'gpspackage', 'progress': 'install'}
+[7.647947] (gpspackage) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/muhaliugur/gpsurus/build/gpspackage'], 'cwd': '/home/muhaliugur/gpsurus/build/gpspackage', 'env': OrderedDict([('USER', 'muhaliugur'), ('CCACHE_DIR', '/home/muhaliugur/.ccache'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda/lib64:/usr/local/cuda/lib64:/opt/ros/humble/opt/zmqpp_vendor/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/muhaliugur'), ('OLDPWD', '/home/muhaliugur'), ('DESKTOP_SESSION', 'pop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'pop'), ('GTK_MODULES', 'gail:atk-bridge'), ('CUDA_TOOLKIT_ROOT_DIR', '/usr/local/cuda'), ('SYSTEMD_EXEC_PID', '11086'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'muhaliugur'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'muhaliugur'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda/bin:/home/muhaliugur/.local/bin:/usr/local/cuda/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/pop-os:@/tmp/.ICE-unix/2199,unix/pop-os:/tmp/.ICE-unix/2199'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9eece5a5_0780_4152_8d08_eaf04333df2f'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'pop:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'pop'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('GNOME_TERMINAL_SERVICE', ':1.143'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '34'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('CXX', '/usr/lib/ccache/g++'), ('GDMSESSION', 'pop'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/muhaliugur/gpsurus/build/gpspackage'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-pop:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/pop:/usr/share/gnome:/home/muhaliugur/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('CC', '/usr/lib/ccache/gcc'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[7.654746] (gpspackage) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.654905] (gpspackage) StdoutLine: {'line': b'-- Installing: /home/muhaliugur/gpsurus/install/gpspackage/lib/gpspackage/pure_pursuit_node\n'}
+[7.659416] (gpspackage) StdoutLine: {'line': b'-- Set runtime path of "/home/muhaliugur/gpsurus/install/gpspackage/lib/gpspackage/pure_pursuit_node" to ""\n'}
+[7.659506] (gpspackage) StdoutLine: {'line': b'-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/lib/gpspackage/teensy_comm_node\n'}
+[7.659583] (gpspackage) StdoutLine: {'line': b'-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/lib/gpspackage/waypoint_logger_node\n'}
+[7.659659] (gpspackage) StdoutLine: {'line': b'-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/launch\n'}
+[7.659749] (gpspackage) StdoutLine: {'line': b'-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/launch/localization.launch.py\n'}
+[7.659857] (gpspackage) StdoutLine: {'line': b'-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config\n'}
+[7.659912] (gpspackage) StdoutLine: {'line': b'-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/noktalarim.dbf\n'}
+[7.659962] (gpspackage) StdoutLine: {'line': b'-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/deneme.shx\n'}
+[7.660009] (gpspackage) StdoutLine: {'line': b'-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/noktalarim.prj\n'}
+[7.660054] (gpspackage) StdoutLine: {'line': b'-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/rota.qmd\n'}
+[7.660098] (gpspackage) StdoutLine: {'line': b'-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/deneme.prj\n'}
+[7.660202] (gpspackage) StdoutLine: {'line': b'-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/rota2.shx\n'}
+[7.660250] (gpspackage) StdoutLine: {'line': b'-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/waypoints_gps.csv\n'}
+[7.660296] (gpspackage) StdoutLine: {'line': b'-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/rota2.shp\n'}
+[7.660346] (gpspackage) StdoutLine: {'line': b'-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/rota2.prj\n'}
+[7.660393] (gpspackage) StdoutLine: {'line': b'-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/ekf.yaml\n'}
+[7.660435] (gpspackage) StdoutLine: {'line': b'-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/deneme.shp\n'}
+[7.660476] (gpspackage) StdoutLine: {'line': b'-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/rota2.cpg\n'}
+[7.660519] (gpspackage) StdoutLine: {'line': b'-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/deneme.cpg\n'}
+[7.660561] (gpspackage) StdoutLine: {'line': b'-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/deneme.dbf\n'}
+[7.660603] (gpspackage) StdoutLine: {'line': b'-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/noktalarim.shx\n'}
+[7.660730] (gpspackage) StdoutLine: {'line': b'-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/waypoint_recorder.py\n'}
+[7.660812] (gpspackage) StdoutLine: {'line': b'-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/rota2.dbf\n'}
+[7.660853] (gpspackage) StdoutLine: {'line': b'-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/noktalarim.cpg\n'}
+[7.660892] (gpspackage) StdoutLine: {'line': b'-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/rota.csvt\n'}
+[7.660938] (gpspackage) StdoutLine: {'line': b'-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/kendi_rotam.csv\n'}
+[7.660978] (gpspackage) StdoutLine: {'line': b'-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/rota.prj\n'}
+[7.661015] (gpspackage) StdoutLine: {'line': b'-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/noktalarim.shp\n'}
+[7.661052] (gpspackage) StdoutLine: {'line': b'-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/config/rota.csv\n'}
+[7.661088] (gpspackage) StdoutLine: {'line': b'-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/ament_index/resource_index/package_run_dependencies/gpspackage\n'}
+[7.661126] (gpspackage) StdoutLine: {'line': b'-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/ament_index/resource_index/parent_prefix_path/gpspackage\n'}
+[7.661161] (gpspackage) StdoutLine: {'line': b'-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/environment/ament_prefix_path.sh\n'}
+[7.661195] (gpspackage) StdoutLine: {'line': b'-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/environment/ament_prefix_path.dsv\n'}
+[7.661234] (gpspackage) StdoutLine: {'line': b'-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/environment/path.sh\n'}
+[7.661271] (gpspackage) StdoutLine: {'line': b'-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/environment/path.dsv\n'}
+[7.661308] (gpspackage) StdoutLine: {'line': b'-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/local_setup.bash\n'}
+[7.661345] (gpspackage) StdoutLine: {'line': b'-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/local_setup.sh\n'}
+[7.661383] (gpspackage) StdoutLine: {'line': b'-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/local_setup.zsh\n'}
+[7.661420] (gpspackage) StdoutLine: {'line': b'-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/local_setup.dsv\n'}
+[7.661460] (gpspackage) StdoutLine: {'line': b'-- Installing: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/package.dsv\n'}
+[7.661496] (gpspackage) StdoutLine: {'line': b'-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/ament_index/resource_index/packages/gpspackage\n'}
+[7.661533] (gpspackage) StdoutLine: {'line': b'-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/cmake/gpspackageConfig.cmake\n'}
+[7.661570] (gpspackage) StdoutLine: {'line': b'-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/cmake/gpspackageConfig-version.cmake\n'}
+[7.661607] (gpspackage) StdoutLine: {'line': b'-- Up-to-date: /home/muhaliugur/gpsurus/install/gpspackage/share/gpspackage/package.xml\n'}
+[7.662662] (gpspackage) CommandEnded: {'returncode': 0}
+[7.681124] (gpspackage) JobEnded: {'identifier': 'gpspackage', 'rc': 0}
+[7.681522] (-) EventReactorShutdown: {}

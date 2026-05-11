@@ -1,0 +1,11 @@
+[0.009s] Invoking command in '/home/muhaliugur/gpsurus/build/gpspackage': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/muhaliugur/gpsurus/build/gpspackage -- -j32 -l32
+[0.049s] [35m[1mConsolidate compiler generated dependencies of target waypoint_logger_node[0m
+[0.062s] [ 50%] Built target pure_pursuit_node
+[0.062s] [ 66%] Built target teensy_comm_node
+[0.062s] [ 83%] [32mBuilding CXX object CMakeFiles/waypoint_logger_node.dir/src/waypoint_logger.cpp.cpp.o[0m
+[0.069s] [01m[Kcc1plus:[m[K [01;31m[Kfatal error: [m[K/home/muhaliugur/gpsurus/src/gpspackage/src/waypoint_logger.cpp.cpp: No such file or directory
+[0.069s] compilation terminated.
+[0.070s] gmake[2]: *** [CMakeFiles/waypoint_logger_node.dir/build.make:76: CMakeFiles/waypoint_logger_node.dir/src/waypoint_logger.cpp.cpp.o] Error 1
+[0.070s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/waypoint_logger_node.dir/all] Error 2
+[0.070s] gmake: *** [Makefile:146: all] Error 2
+[0.072s] Invoked command in '/home/muhaliugur/gpsurus/build/gpspackage' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/muhaliugur/gpsurus/build/gpspackage -- -j32 -l32

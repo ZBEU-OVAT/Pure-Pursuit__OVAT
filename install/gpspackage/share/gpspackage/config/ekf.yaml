@@ -1,0 +1,37 @@
+ekf_filter_node:
+  ros__parameters:
+    frequency: 30.0
+    two_d_mode: true # Çok önemli! Arabamız uçmuyor, sadece X ve Y'de gidiyor.
+    print_diagnostics: true
+
+    map_frame: map
+    odom_frame: odom
+    base_link_frame: base_link
+    world_frame: odom
+
+    # 1. SENSÖR: IMU
+    imu0: /imu/data
+    # Matris sırası: [X, Y, Z, Roll, Pitch, Yaw, X_hız, Y_hız, Z_hız, Roll_hız, Pitch_hız, Yaw_hız, X_ivme, Y_ivme, Z_ivme]
+    imu0_config: [false, false, false,
+                  false, false, true,  # Sadece Yaw (Burnumuzun baktığı yön)
+                  false, false, false,
+                  false, false, true,  # Yaw dönüş hızı
+                  true,  true,  false] # X ve Y eksenindeki ivmelenme
+    imu0_relative: true
+
+    # 2. SENSÖR: GPS (Navsat Transform'dan metreye çevrilmiş olarak gelecek)
+    odom0: /odometry/gps
+    odom0_config: [true,  true,  false, # Sadece X ve Y metre konumu
+                   false, false, false,
+                   false, false, false,
+                   false, false, false,
+                   false, false, false]
+
+navsat_transform_node:
+  ros__parameters:
+    frequency: 30.0
+    magnetic_declination_radians: 0.100  # Bulunduğun şehrin manyetik sapması (Örn: İstanbul için yaklaşık 0.1 radyan)
+    yaw_offset: 1.5707 # IMU'nun sıfır noktası ile Doğu yönü arasındaki fark (Genelde pi/2 = 1.5707 radyandır)
+    zero_altitude: true
+    publish_filtered_gps: true
+    use_odometry_yaw: false

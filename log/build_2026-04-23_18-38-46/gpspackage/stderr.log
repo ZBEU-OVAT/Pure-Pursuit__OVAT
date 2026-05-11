@@ -1,0 +1,10 @@
+[01m[K/home/muhaliugur/gpsurus/src/gpspackage/src/pure_pursuit.cpp:[m[K In constructor ‘[01m[KPurePursuit::PurePursuit()[m[K’:
+[01m[K/home/muhaliugur/gpsurus/src/gpspackage/src/pure_pursuit.cpp:249:10:[m[K [01;35m[Kwarning: [m[K‘[01m[KPurePursuit::has_gps_[m[K’ will be initialized after [[01;35m[K-Wreorder[m[K]
+  249 |     bool [01;35m[Khas_gps_[m[K;
+      |          [01;35m[K^~~~~~~~[m[K
+[01m[K/home/muhaliugur/gpsurus/src/gpspackage/src/pure_pursuit.cpp:248:10:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool PurePursuit::initialized_[m[K’ [[01;35m[K-Wreorder[m[K]
+  248 |     bool [01;35m[Kinitialized_[m[K;
+      |          [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/muhaliugur/gpsurus/src/gpspackage/src/pure_pursuit.cpp:30:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K-Wreorder[m[K]
+   30 |     [01;35m[KPurePursuit[m[K()
+      |     [01;35m[K^~~~~~~~~~~[m[K
