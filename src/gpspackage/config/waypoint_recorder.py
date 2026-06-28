@@ -5,12 +5,15 @@ from rclpy.qos import QoSProfile, ReliabilityPolicy, DurabilityPolicy
 from sensor_msgs.msg import NavSatFix
 import csv
 import os
+import math
+import threading
+
+MESAFE_ESIGI = 0.5  # metre — her 50cm'de bir kaydet
 
 class WaypointRecorder(Node):
     def __init__(self):
         super().__init__('waypoint_recorder')
 
-        # MAVROS SensorDataQoS ile uyumlu QoS - BEST_EFFORT
         qos = QoSProfile(
             depth=10,
             reliability=ReliabilityPolicy.BEST_EFFORT,
@@ -28,35 +31,68 @@ class WaypointRecorder(Node):
         self.waypoints = []
         self.last_lat = None
         self.last_lon = None
-        self.min_dist_deg = 0.000025  # yaklasik 2.5 metre (Virajlar icin sikilastirildi)
+        self.recording = False
 
-        self.get_logger().info("=== WAYPOINT KAYDEDICI BASLATILDI ===")
+        self.get_logger().info("=== OTOMATIK WAYPOINT KAYDEDICI (50cm) ===")
         self.get_logger().info(f"Kayit dosyasi: {self.output_file}")
-        self.get_logger().info("Araci gezdirin, her 2.5 metrede bir otomatik kaydedecek.")
-        self.get_logger().info("Durdurmak icin Ctrl+C")
+        self.get_logger().info("ENTER = kaydi baslat/durdur  |  q + ENTER = bitir ve kaydet")
+
+        kb_thread = threading.Thread(target=self.keyboard_loop, daemon=True)
+        kb_thread.start()
+
+    def gps_to_dist(self, lat1, lon1, lat2, lon2):
+        R = 6378137.0
+        dlat = math.radians(lat2 - lat1)
+        dlon = math.radians(lon2 - lon1)
+        dx = dlon * R * math.cos(math.radians(lat1))
+        dy = dlat * R
+        return math.hypot(dx, dy)
 
     def gps_callback(self, msg):
+        if msg.status.status < 0:
+            return
+        if msg.latitude == 0.0 and msg.longitude == 0.0:
+            return
+
         lat = msg.latitude
         lon = msg.longitude
 
-        if lat == 0.0 and lon == 0.0:
+        if not self.recording:
             return
 
         if self.last_lat is None:
-            self.save_point(lat, lon)
-        else:
-            dlat = abs(lat - self.last_lat)
-            dlon = abs(lon - self.last_lon)
-            dist = (dlat**2 + dlon**2) ** 0.5
-            if dist >= self.min_dist_deg:
-                self.save_point(lat, lon)
+            self.last_lat = lat
+            self.last_lon = lon
+            self.waypoints.append((lat, lon))
+            print(f"[1] Baslangic noktasi kaydedildi: {lat:.7f}, {lon:.7f}")
+            return
 
-    def save_point(self, lat, lon):
-        self.waypoints.append((lat, lon))
-        self.last_lat = lat
-        self.last_lon = lon
-        self.get_logger().info(
-            f"[{len(self.waypoints)}] Kaydedildi: lat={lat:.7f}, lon={lon:.7f}")
+        dist = self.gps_to_dist(self.last_lat, self.last_lon, lat, lon)
+        if dist >= MESAFE_ESIGI:
+            self.waypoints.append((lat, lon))
+            self.last_lat = lat
+            self.last_lon = lon
+            print(f"[{len(self.waypoints)}] {lat:.7f}, {lon:.7f}  (+{dist:.2f}m)")
+
+    def keyboard_loop(self):
+        while True:
+            try:
+                key = input()
+            except EOFError:
+                break
+
+            if key.strip().lower() == 'q':
+                self.save_to_file()
+                rclpy.shutdown()
+                break
+            else:
+                self.recording = not self.recording
+                if self.recording:
+                    self.last_lat = None
+                    self.last_lon = None
+                    print(">>> KAYIT BASLADI — arac hareket etsin")
+                else:
+                    print(f">>> KAYIT DURDURULDU — {len(self.waypoints)} nokta birikti")
 
     def save_to_file(self):
         with open(self.output_file, 'w', newline='') as f:

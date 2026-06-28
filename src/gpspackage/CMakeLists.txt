@@ -9,18 +9,14 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
-find_package(nav_msgs REQUIRED)
-find_package(geometry_msgs REQUIRED)
-find_package(visualization_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(std_srvs REQUIRED)
-find_package(tf2 REQUIRED)
 
 # 2. Sofor Node (Pure Pursuit)
 add_executable(pure_pursuit_node src/pure_pursuit.cpp)
 # DIKKAT: sensor_msgs buraya eklendi, yoksa RTK GPS kodu derlenmezdi!
 # YENI: tf2 eklendi ki Quaternion.h hatasi cozulsun!
-ament_target_dependencies(pure_pursuit_node rclcpp nav_msgs geometry_msgs std_msgs std_srvs visualization_msgs sensor_msgs tf2)
+ament_target_dependencies(pure_pursuit_node rclcpp std_msgs std_srvs sensor_msgs)
 
 # 3. Motor Ustasi Node (Teensy Comm)
 add_executable(teensy_comm_node src/teensy_comm.cpp)
@@ -34,9 +30,7 @@ install(TARGETS
 )
 
 install(DIRECTORY
-  launch
   config
-  meshes
   DESTINATION share/${PROJECT_NAME}
 )
 

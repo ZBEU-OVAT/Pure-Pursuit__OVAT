@@ -4,12 +4,27 @@
 #include <termios.h>
 #include <fcntl.h>
 #include <unistd.h>
+#include <glob.h>
 #include <cmath>
 #include <string>
+#include <vector>
 #include <mutex>
 
 int serial_fd = -1;
 std::mutex serial_mutex;
+
+// ---------------- ACM PORT TARAMA ----------------
+std::vector<std::string> findAcmPorts()
+{
+    glob_t g{};
+    std::vector<std::string> ports;
+    if (glob("/dev/ttyACM*", 0, nullptr, &g) == 0) {
+        for (size_t i = 0; i < g.gl_pathc; i++)
+            ports.emplace_back(g.gl_pathv[i]);
+    }
+    globfree(&g);
+    return ports;
+}
 
 // ---------------- SERIAL PORT AÇMA ----------------
 bool openSerial(const std::string &port)
@@ -39,21 +54,21 @@ bool openSerial(const std::string &port)
     return true;
 }
 
-// ---------------- SERIAL YAZMA (Teensy için Binary 4 Byte) ----------------
-bool sendInt32ToTeensy(int32_t value)
+// ---------------- SERIAL YAZMA (Teensy için 1 Byte — bufferSize=1) ----------------
+bool sendByteToTeensy(uint8_t value)
 {
     std::lock_guard<std::mutex> lock(serial_mutex);
     if (serial_fd < 0) return false;
 
-    ssize_t written = write(serial_fd, &value, sizeof(value));
-    return (written == sizeof(value));
+    ssize_t written = write(serial_fd, &value, 1);
+    return (written == 1);
 }
 
-void sendRepeated(int32_t value)
+void sendRepeated(uint8_t value)
 {
     for (int i = 0; i < 3; i++)
     {
-        sendInt32ToTeensy(value);
+        sendByteToTeensy(value);
         usleep(10000); // 10 ms bekleme
     }
 }
@@ -63,13 +78,19 @@ class SerialCommNode : public rclcpp::Node
 public:
     SerialCommNode() : Node("serial_comm_node")
     {
-        if (!openSerial("/dev/ttyACM1"))
-        {
-            RCLCPP_ERROR(this->get_logger(), "Teensy ACM1 bulunamadı! ACM0 deneniyor...");
-            if (!openSerial("/dev/ttyACM0")) {
-                RCLCPP_FATAL(this->get_logger(), "Seri port açılamadı! Kabloyu kontrol et.");
-                return;
+        auto ports = findAcmPorts();
+        bool connected = false;
+        for (const auto &port : ports) {
+            if (openSerial(port)) {
+                RCLCPP_INFO(this->get_logger(), "Teensy bulundu: %s", port.c_str());
+                connected = true;
+                break;
             }
+            RCLCPP_WARN(this->get_logger(), "%s acilamadi, sonraki deneniyor...", port.c_str());
+        }
+        if (!connected) {
+            RCLCPP_FATAL(this->get_logger(), "Hicbir ACM portu acilamadi! Kablo bagli mi?");
+            return;
         }
 
         steering_sub_ = this->create_subscription<std_msgs::msg::Int32>(
@@ -97,7 +118,7 @@ private:
 
     void steeringTimerCallback() {
         if (!steering_updated_) return;
-        sendInt32ToTeensy(static_cast<int32_t>(last_steering_));
+        sendByteToTeensy(static_cast<uint8_t>(last_steering_));
         steering_updated_ = false;
     }
 
